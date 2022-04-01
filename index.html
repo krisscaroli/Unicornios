@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unicornios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Mis Unicornios</h1>
+      </header>
+      <section id="registro">
+        <form>
+          <h2>Nuevo Unicornio</h2>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Nombre" />
+          </div>
+          <div>
+            <label for="poder">Poder</label>
+            <input id="poder" type="text" placeholder="Poder" />
+          </div>
+          <div>
+            <label for="imagen">Imagen</label>
+            <input id="imagen" type="text" placeholder="Imagen" />
+          </div>
+          <div>
+            <label for="edad">Edad</label>
+            <input id="edad" type="number" placeholder="00" />
+          </div>
+          <button id="btnAgregar" type="button">Agregar</button>
+        </form>
+
+        <form>
+          <h2>Modificar Unicornio</h2>
+          <p>Para modificar debes seleccionar el unicornio en el listado.</p>
+
+          <div>
+            <label for="nombreEdit">Nombre</label>
+            <input id="nombreEdit" type="text" placeholder="Nombre" />
+          </div>
+          <div>
+            <label for="poder">Poder</label>
+            <input id="poderEdit" type="text" placeholder="Poder" />
+          </div>
+          <div>
+            <label for="imagen">Imagen</label>
+            <input id="imagenEdit" type="text" placeholder="Imagen" />
+          </div>
+          <div>
+            <label for="edadEdit">Edad</label>
+            <input id="edadEdit" type="number" placeholder="00" />
+          </div>
+          <button
+            id="btnModificar"
+            type="button"
+            onclick="modificarUnicornio()"
+          >
+            Modificar
+          </button>
+        </form>
+      </section>
+      <section id="establo">
+        <h2>ESTABLO</h2>
+        <hr />
+        <div id="lista">
+          <!--<div class="card">
+        <img src="">
+        <div class="contenido">
+         <h4>Nombre:</h4>
+         <p>Pinki</p>
+         <h4>Poder:</h4>
+         <p>Pinki</p>
+         <h4>Edad:</h4>
+         <p>12</p>
+        </div>
+        </div>-->
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
